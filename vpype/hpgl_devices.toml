@@ -106,3 +106,32 @@ y_axis_up = true
 origin_location = ["15mm", "200mm"]
 final_pu_params = "0,7721"
 info = "The plotter dip switches must be set to Metric paper sizes mode."
+
+[device.dxy1200]
+name = "Roland DXY-1200"
+plotter_unit_length = "0.025mm"
+pen_count = 8
+
+[[device.dxy1200.paper]]
+name = "a4"
+aka_names = ["A4"]
+info = "The plotter must be configured in ISO A3 mode (all dip switches off), place a3 paper origin at X15mm, Y10mm on the flatbed with the longest side along X. In order to get the best results it is recommended to download 3D-printable magnetic spacers from: https://www.thingiverse.com/thing:4727242"
+paper_size = ["297mm", "210mm"]
+x_range = [0, 11040]
+y_range = [0, 7721]
+y_axis_up = true
+origin_location = ["10.6mm", "209.13mm"]
+final_pu_params = "16158,11040"
+set_ps = 4
+
+[[device.dxy1200.paper]]
+name = "a3"
+aka_names = ["A3"]
+info = "The plotter must be configured in ISO A3 mode (all dip switches off), place a3 paper origin at X15mm, Y10mm on the flatbed with the longest side along X. In order to get the best results it is recommended to download 3D-printable magnetic spacers from: https://www.thingiverse.com/thing:4727242"
+paper_size = ["420mm", "297mm"]
+x_range = [0, 16158]
+y_range = [0, 11040]
+y_axis_up = true
+origin_location = ["15.85mm", "287mm"]
+final_pu_params = "16158,11040"
+set_ps = 0
